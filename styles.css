@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(206, 238, 255);
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.header h1 {
+  align-self: center;
+  justify-self: center;
+}
+.header button {
+  justify-self: end;
+  align-self: end;
+  background-color: white;
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.book-container {
+  width: 70vw;
+  height: 60vh;
+  padding: 10px;
+  margin: 10px;
+}
+
+.books-catalog {
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 20px;
+  height: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.book-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  height: 70%;
+
+}

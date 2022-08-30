@@ -3,6 +3,8 @@ let myLibrary = [
   new Book('Where the Crawdads Sing', 'Delia Owens', 368, "yes")
 ];
 
+const pageContainer = document.querySelector(".books-catalog");
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
@@ -30,7 +32,27 @@ function displayBooks(libraryArray) {
   for (book in libraryArray) {
     console.log(libraryArray[book].info())
   }
+
+
+  let bookCard = document.createElement("div"); 
+  bookCard.className = "book-card";
+  bookCard.textContent = "Hello"
+  pageContainer.appendChild(bookCard);
+
+
+  let bookCard2 = document.createElement("div"); 
+  bookCard2.className = "book-card";
+  bookCard2.textContent = "Hello"
+  pageContainer.appendChild(bookCard2);
+
+  let bookCard3 = document.createElement("div"); 
+  bookCard3.className = "book-card";
+  bookCard3.textContent = "Hello"
+  pageContainer.appendChild(bookCard3);
+
 }
 
 
 displayBooks(myLibrary);
+
+//pageContainer.innerHTML = bookContainers;
